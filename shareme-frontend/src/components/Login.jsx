@@ -7,10 +7,18 @@ import logo from '../assets/logowhite.png'
 
 const Login = () => {
   return (
-    // took a day off
-    
-    <div>
-      Login
+    <div className='flex justify-start items-center flex-col h-screen'>
+      <div className='relative w-full h-full'>
+        <video
+          src={shareVideo}
+          type="video/mp4"
+          Loop
+          controls={false}
+          muted
+          autoPlay
+          className='w-full h-full object-cover'
+        />
+      </div>
     </div>
   )
 }
