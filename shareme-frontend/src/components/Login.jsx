@@ -9,6 +9,7 @@ import { client } from '../client';
 
 const Login = () => {
 
+  const navigate = useNavigate();
   const responseGoogle = (response) => {
     console.log(response); // delete after testing
     localStorage.setItem('user', JSON.stringify(response.profileObj));
@@ -21,6 +22,10 @@ const Login = () => {
       userName: name, 
       image: imageUrl, 
     }
+
+    client.createIfNotExists(doc).then(() => {
+      navigate('/', { replace: true })
+    })
   } 
 
   return (
