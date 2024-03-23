@@ -26,6 +26,8 @@ const Login = () => {
     client.createIfNotExists(doc).then(() => {
       navigate('/', { replace: true })
       // continue from 1.05
+      // Boot.dev email recovered
+      
     })
   } 
 
