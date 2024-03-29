@@ -14,6 +14,7 @@ const Login = () => {
     // console.log(response); // delete after testing
     // time to implement clerk
     localStorage.setItem('user', JSON.stringify(response.profileObj));
+    // boot .de v work in progress
 
     const { name, googleId, imageUrl } = response.profileObj;
 
